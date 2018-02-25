@@ -1,13 +1,15 @@
 package com.employee.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Employee {
 
-	@Id
+	
 	private String employeeId;
 	private String firstName;
 	private String lastName;
@@ -23,6 +25,8 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)	
 	public String getEmployeeId() {
 		return employeeId;
 	}
@@ -47,7 +51,7 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	@OneToOne
+	@ManyToOne
 	public Department getDepartment() {
 		return department;
 	}
