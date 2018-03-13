@@ -1,0 +1,104 @@
+.lbl,.labelTd,.labelText { /* don't remove this style */
+	text-align: left !important;
+	font-family: arial, helvetica, clean, sans-serif;
+	font-size: 11px;
+	vertical-align:top;
+	padding-left: 5px; 
+	font-weight: bold;
+}
+
+.inputTextAreaLong { /*66 places are used*/
+	color: #395569;
+	max-width: 420px;
+	height: 54px;
+	min-width: 30px;
+    width: 100%;
+}
+
+.fl {float:left;} .fr{float:right;}
+input.smallButton, a.smallButton {
+		font-family:"Museo Sans W01 500";
+		font-smoothing:antialiased;
+		font-size:1em;
+		font-weight: normal;
+		overflow: visible;
+		padding:0 0.9375em !important; /*jmesa.css use input padding 0 value*/
+		outline:0;
+		margin: 2px;
+		line-height:2.1875em;
+		display:inline-block;
+		border-radius:0.1875em;
+		-webkit-font-smoothing:antialiased;	
+		border:0;
+		color:#FFF;	
+		cursor:pointer;
+		background-color:#0386f1;   /*#414042*/
+		text-decoration: none;
+		white-space: normal;
+}
+input.smallButton:hover,
+input.smallButton:focus
+ { 
+    text-decoration: none;
+   	border-radius:0.1875em;
+	border:0;
+	outline:0;
+	-webkit-font-smoothing:antialiased;	
+	text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+    background-color: #4faaf5;
+	}
+.smallButton[disabled], .smallButton:hover[disabled], .smallButton:focus[disabled]{
+		font-family:"Museo Sans W01 500";
+		font-smoothing:antialiased;
+		font-size:1em;
+		overflow: visible;
+		padding:0 0.9375em !important; /*jmesa.css use input padding 0 value*/
+		outline:0;
+		margin: 2px;
+		line-height:22px;
+		border-radius:0.1875em;
+		-webkit-font-smoothing:antialiased;	
+		color: #6d6d6d;	
+		background-color: #f4f4f4 !important;
+		border: 1px solid #c0c3c6;
+		-moz-box-shadow:    inset 0 0 1px #fff;
+   		-webkit-box-shadow: inset 0 0 1px #fff;
+   		box-shadow:         inset 0 0 1px #fff; 
+
+		text-decoration: none;
+		filter:none;
+		background-image: none;
+        text-decoration:none;
+        text-shadow:0px -1px 0px #fff;
+        cursor: default;
+}
+.smallButton::-moz-focus-inner, .cancelButton::-moz-focus-inner, .smallButton[disabled]::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing:0;
+	width: 100%;
+}
+
+tr {
+	vertical-align: top;
+}
+
+td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+	color: #333333;
+	text-align: left; /* don't change - this default align */
+	word-wrap: break-word;
+	-ms-word-wrap: break-word;
+	word-break: break-all;
+}
+
+table.pdFistTd tr td:first-child  { padding-left: 5px; }
+table.pdFistTd tr td:last-child  { padding-right: 5px; }
